@@ -4,6 +4,8 @@ const morgan = require("morgan")
 const { PORT } = require("./config")
 const { NotFoundError } = require("./utils/errors")
 const authRoutes = require("./routes/auth")
+const ordersRouter = require('./routes/orders')
+const storeRouter = require('./models/store')
 
 const app = express()
 
